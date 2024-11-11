@@ -1,0 +1,65 @@
+/* Estilos para el contenedor de navegación */
+nav {
+    background-color: #454545;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Se utiliza subclases para cambiar el color de fondo al pasar el ratón por encima */
+nav:hover {
+    background-color: #202020;
+}
+
+/* Estilos para el título dentro del contenedor de navegación */
+nav h3 {
+    margin-top: 0;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para los elementos de la lista dentro del contenedor de navegación */
+/* Separa los elementos visualmente en cajas */
+nav ul li {
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Aumentar el tamaño del elemento de la lista al pasar el ratón por encima */
+nav ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para los enlaces dentro de los elementos de la lista */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+}
+
+/* Subrayar y cambiar el color del enlace al pasar el ratón por encima */
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Estilos para la imagen en la parte superior de la tarjeta */
+/* Me permite alinear la imagen con el contenido en texto de cada post*/
+.card-img-top {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0; /* Eliminar el margen inferior */
+}

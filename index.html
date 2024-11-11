@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog de Filosofía</title>
+    <!-- Se incluyen las hojas de estilo de Bootstrap y el archivo index.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center" id="indice">Bienvenido al Blog de Filosofía</h1>
+        
+        <!-- Navegación con índice de entradas -->
+        <nav class="mb-4">
+            <h3>Índice</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#entrada1">Albert Camus: El Absurdo</a></li>
+                <li class="list-group-item"><a href="#entrada2">José Ortega y Gasset: La Razón Vital</a></li>
+                <li class="list-group-item"><a href="#entrada3">Friedrich Nietzsche: El Superhombre</a></li>
+            </ul>
+        </nav>
+
+        <!-- Agrego la clase mb-4 para darle margen inferior -->
+        <div id="formulario" class="mb-4">
+            <h3>Añadir Nuevo Post</h3>
+            <!-- Formulario para añadir nuevos posts el id enlaza con javascript para capturar el evento con el listener -->
+            <form id="new-post-form">
+                <!-- La clase form-group se utiliza para agrupar etiquetas de formulario y controles de formulario -->
+                <div class="form-group">
+                    <input type="text" id="post-title" class="form-control" placeholder="Título del post" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="post-content" class="form-control" placeholder="Contenido del post" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="post-image" class="form-control" placeholder="URL de la imagen" required>
+                </div>
+                <!-- Botón para genera el evento de submit que será capturado por javascript -->
+                <button type="submit" class="btn btn-primary">Añadir Post</button>
+            </form>
+        </div>
+        
+        <!-- Contenido de los posts -->
+        <div id="blog-entries">
+            <!-- Los comentarios de post se aplican únicamente al primer post -->
+            <!-- La clase card se utiliza para crear una tarjeta en el blog-->
+            <div class="card" id="entrada1">
+                <!-- Título del post -->
+                <h3 class="card-title">Albert Camus: El Absurdo</h3>
+                <!-- Fecha del post -->
+                <p class="card-text"><small class="text-muted">Fecha: 3 de Octubre, 2023</small></p>
+                <!-- Contenido del post -->
+                <div class="card-body">
+                    <!-- Imagen del autor -->
+                    <img src="https://example.com/camus.jpg" alt="Albert Camus" class="card-img-top">
+                    <p class="card-text">Albert Camus fue un filósofo, autor y periodista francés. Sus puntos de vista contribuyeron al surgimiento de la filosofía conocida como el absurdismo. Camus es conocido por sus obras como "El extranjero" y "El mito de Sísifo".
+                    <br>
+                    <br>
+                    Camus nació en Argelia, entonces una colonia francesa, en 1913. Su infancia estuvo marcada porla pobreza y la enfermedad, pero logró destacar académicamente. Estudió filosofía en laUniversidad de Argel y comenzó a escribir para varios periódicos. Durante la Segunda GuerraMundial, se unió a la resistencia francesa y editó el periódico clandestino "Combat".
+                    <br>
+                    <br>
+                    El absurdismo, la filosofía por la que es más conocido, explora la idea de que la vida carecede sentido inherente. Según Camus, los seres humanos buscan constantemente significado ypropósito en un universo indiferente. Esta búsqueda inevitablemente lleva a un conflicto entrenuestras expectativas y la realidad, lo que él llama "el absurdo". En "El mito de Sísifo",Camus utiliza la figura mitológica de Sísifo, condenado a empujar una roca cuesta arriba solopara verla rodar hacia abajo una y otra vez, como una metáfora de la condición humana.
+                    <br>
+                    <br>
+                    A pesar de su enfoque en el absurdo, Camus no era un nihilista. Creía que, aunque la vidacarece de un significado inherente, los individuos pueden encontrar valor y propósito a travésde sus acciones y elecciones. Esta perspectiva se refleja en sus novelas, donde los personajesa menudo enfrentan situaciones absurdas pero encuentran formas de afirmar su humanidad.
+                    <br>
+                    <br>
+                    "El extranjero", una de sus obras más famosas, cuenta la historia de Meursault, un hombreemocionalmente desapegado que comete un asesinato aparentemente sin motivo. La novela exploratemas de alienación, indiferencia y la búsqueda de significado en un mundo absurdo. "Lapeste", otra de sus obras importantes, utiliza una epidemia en una ciudad argelina comoalegoría de la resistencia humana frente a la adversidad.
+                    <br>
+                    <br>
+                    Camus recibió el Premio Nobel de Literatura en 1957 por su contribución a la literatura y sucapacidad para iluminar la condición humana. Murió trágicamente en un accidenteautomovilístico en 1960, pero su legado perdura a través de sus escritos y su influencia en lafilosofía y la literatura contemporáneas.</p>
+                </div>
+                <!-- Botón para volver al índice -->
+                <a href="#indice" class="btn btn-primary">Volver al Índice</a>
+            </div>
+            <div class="card" id="entrada2">
+                <h3 class="card-title">José Ortega y Gasset: La Razón Vital</h3>
+                <p class="card-text"><small class="text-muted">Fecha: 3 de Octubre, 2023</small></p>
+                <div class="card-body">
+                    <img src="https://example.com/ortega.jpg" alt="José Ortega y Gasset" class="card-img-top">
+                    <p class="card-text"><p class="card-text">José Ortega y Gasset fue un filósofo y ensayista español. Es conocido por su teoría de la razón vital y su influencia en la filosofía contemporánea. Sus obras más destacadas incluyen "La rebelión de las masas" y "Meditaciones del Quijote". Ortega y Gasset exploró temas como la vida humana, la cultura y la historia, y su pensamiento sigue siendo relevante en la actualidad. Su enfoque filosófico se centró en la idea de que la vida es la realidad radical y que la razón debe estar al servicio de la vida. Esta perspectiva lo llevó a desarrollar su teoría de la razón vital, que sostiene que la razón no puede ser entendida fuera del contexto de la vida humana.
+                        <br>
+                        <br>
+                        Ortega y Gasset también fue un crítico de la modernidad y de la masificación de la sociedad. En "La rebelión de las masas", argumenta que la sociedad moderna está dominada por las masas, que carecen de la capacidad de pensar críticamente y de tomar decisiones informadas. Según Ortega, esta situación conduce a una crisis de la cultura y de la civilización. Propone que la solución a esta crisis es el desarrollo de una élite intelectual que pueda guiar a la sociedad hacia un futuro más racional y humano.
+                        <br>
+                        <br>
+                        Además de su trabajo filosófico, Ortega y Gasset fue un prolífico ensayista y periodista. Escribió sobre una amplia variedad de temas, desde la política y la educación hasta el arte y la literatura. Su estilo de escritura es conocido por su claridad y elegancia, y sus ensayos siguen siendo leídos y estudiados en la actualidad.
+                        <br>
+                        <br>
+                        Ortega y Gasset también tuvo una influencia significativa en la filosofía y la cultura española. Fue uno de los fundadores de la Revista de Occidente, una publicación que jugó un papel crucial en la introducción de las ideas filosóficas y culturales europeas en España. A través de su trabajo en la revista, Ortega ayudó a fomentar un diálogo entre la cultura española y la europea, y su influencia se puede ver en la obra de muchos filósofos y escritores españoles contemporáneos.
+                        <br>
+                        <br>
+                        En resumen, José Ortega y Gasset fue una figura central en la filosofía y la cultura del siglo XX. Su teoría de la razón vital y su crítica de la modernidad siguen siendo relevantes hoy en día, y su legado continúa influyendo en la filosofía y la cultura contemporáneas. Su obra nos invita a reflexionar sobre la relación entre la vida y la razón, y sobre el papel de la cultura y la educación en la formación de una sociedad más humana y racional.</p></p>
+                </div>
+                <a href="#indice" class="btn btn-primary">Volver al Índice</a>
+            </div>
+            <div class="card" id="entrada3">
+                <h3 class="card-title">Friedrich Nietzsche: El Superhombre</h3>
+                <p class="card-text"><small class="text-muted">Fecha: 3 de Octubre, 2023</small></p>
+                <div class="card-body">
+                    <img src="https://example.com/nietzsche.jpg" alt="Friedrich Nietzsche" class="card-img-top">
+                    <p class="card-text">Friedrich Nietzsche fue un filósofo, poeta y crítico cultural alemán. Es conocido por sus ideas sobre el nihilismo, el eterno retorno y el concepto del superhombre. Sus obras incluyen "Así habló Zaratustra" y "Más allá del bien y del mal". Nietzsche nació el 15 de octubre de 1844 en Röcken, un pequeño pueblo en Prusia. Desde joven mostró un gran interés por la filosofía y la literatura, y estudió en la Universidad de Bonn y en la Universidad de Leipzig.
+                        <br>
+                        <br>
+                        Nietzsche es quizás más famoso por su declaración de que "Dios ha muerto", una afirmación que refleja su creencia de que la religión tradicional y la moralidad ya no podían proporcionar un fundamento sólido para la vida en la era moderna. En su lugar, propuso la idea del superhombre, un individuo que crea sus propios valores y vive de acuerdo con su propia voluntad de poder. Esta idea ha sido interpretada de diversas maneras, pero en general se entiende como un llamado a la auto-superación y a la creación de un nuevo sentido de propósito en un mundo sin certezas absolutas.
+                        <br>
+                        <br>
+                        El concepto del eterno retorno es otra idea central en la filosofía de Nietzsche. Según esta teoría, el universo y todos los eventos en él se repiten eternamente en un ciclo infinito. Esta idea puede ser vista como una prueba de la fortaleza del individuo: si uno puede aceptar y abrazar la idea de vivir la misma vida una y otra vez, entonces ha alcanzado un nivel de afirmación de la vida que Nietzsche consideraba esencial.
+                        <br>
+                        <br>
+                        Nietzsche también fue un crítico feroz de la cultura y la sociedad de su tiempo. En obras como "Más allá del bien y del mal" y "La genealogía de la moral", criticó lo que veía como la hipocresía y la mediocridad de la moralidad convencional. Argumentó que los valores tradicionales a menudo servían para reprimir la creatividad y la individualidad, y abogó por una reevaluación radical de todos los valores.
+                        <br>
+                        <br>
+                        A lo largo de su vida, Nietzsche sufrió de problemas de salud, incluyendo migrañas severas y problemas de visión. Estos problemas de salud, junto con su naturaleza solitaria y su rechazo de la academia tradicional, lo llevaron a una vida de aislamiento. Pasó sus últimos años en un estado de deterioro mental, y murió el 25 de agosto de 1900.
+                        <br>
+                        <br>
+                        A pesar de su vida tumultuosa, la influencia de Nietzsche en la filosofía y la cultura ha sido profunda y duradera. Sus ideas han sido adoptadas y reinterpretadas por una amplia variedad de pensadores, desde existencialistas como Jean-Paul Sartre hasta psicólogos como Carl Jung. Su estilo de escritura, que combina aforismos, poesía y análisis filosófico, sigue siendo estudiado y admirado.
+                        <br>
+                        <br>
+                        En resumen, Friedrich Nietzsche fue una figura central en la filosofía del siglo XIX, cuyas ideas sobre el nihilismo, el eterno retorno y el superhombre continúan siendo relevantes hoy en día. Su crítica de la moralidad convencional y su llamado a la auto-superación han dejado una marca indeleble en la filosofía y la cultura contemporáneas. Su obra nos invita a cuestionar nuestras creencias y a buscar un sentido de propósito y autenticidad en un mundo en constante cambio.</p>                </div>
+                <a href="#indice" class="btn btn-primary">Volver al Índice</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
