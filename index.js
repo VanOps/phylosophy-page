@@ -18,7 +18,7 @@ document.getElementById('new-post-form').addEventListener('submit', function(eve
     });
     
     // Crear un nuevo id para el post
-    const newPostId = `entrada${document.querySelectorAll('.blog-entry').length + 1}`;
+    const newPostId = `entrada${document.querySelectorAll('.card').length + 1}`;
     
     // Crear nuevo post div
     const newPost = document.createElement('div');
